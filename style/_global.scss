@@ -8,6 +8,12 @@
 
 $clr-text-main: #32325d;
 $clr-text-secondary: #8898aa;
+$clr-banana-yellow: #edb830;
+
+@mixin shadowBig {
+    box-shadow: 0px 10px 30px rgba(89, 117, 133, 0.05),
+        0px 20px 50px rgba(89, 117, 133, 0.1);
+}
 
 html {
     font-size: 62.5%;
@@ -15,4 +21,13 @@ html {
 
 body {
     font-family: $font-main;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
 }

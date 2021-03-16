@@ -18,6 +18,7 @@
         padding: 0.4rem 0.8rem;
         @include fontset(1.6rem, 2.4rem, 700);
         color: $clr-text-secondary;
+        cursor: pointer;
 
         &:not(:last-child) {
             margin-right: 0.8rem;

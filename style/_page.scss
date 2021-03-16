@@ -4,4 +4,15 @@
         margin: 0 auto;
         padding: 0 2.4rem;
     }
+
+    &--body {
+        background: url(../img/background/bg-top.webp),
+            url(../img/background/bg-bottom.webp);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+    }
+
+    &--main {
+        margin: 4rem 0;
+    }
 }
