@@ -1,0 +1,30 @@
+.header {
+    padding: 2.4rem 0;
+    display: flex;
+    align-items: center;
+
+    &__logo-picture {
+        display: block;
+        margin-right: 2.4rem;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__list-item {
+        padding: 0.4rem 0.8rem;
+        @include fontset(1.6rem, 2.4rem, 700);
+        color: $clr-text-secondary;
+
+        &:not(:last-child) {
+            margin-right: 0.8rem;
+        }
+
+        &--active {
+            color: $clr-text-main;
+        }
+    }
+}

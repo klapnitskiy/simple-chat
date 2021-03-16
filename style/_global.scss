@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$clr-text-main: #32325d;
+$clr-text-secondary: #8898aa;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-main;
+}
