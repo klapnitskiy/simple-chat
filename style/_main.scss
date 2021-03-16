@@ -2,8 +2,14 @@
     margin-left: 6rem;
     margin-right: 4rem;
 
+    @media screen and (max-width: 768px) {
+        margin-right: unset;
+        margin-left: unset;
+    }
+
     &__content {
         display: flex;
+        flex-wrap: wrap;
         gap: 4rem;
     }
 
@@ -30,10 +36,15 @@
     }
 
     &__chat {
-        min-width: 56rem;
+        flex: 1 1 56rem;
+        // max-width: 56rem;
+        width: 100%;
         background: #ffffff;
         @include shadowBig;
         border-radius: 1.6rem;
+
+        @media screen and (max-width: 1024px) {
+        }
     }
 
     &__chat-top {
@@ -130,12 +141,14 @@
     }
 
     &__textarea {
+        flex: 1 1 44rem;
         resize: none;
         padding: 4rem 4.2rem;
         border: none;
+        min-height: 30rem;
         @include shadowBig;
-        max-width: 120rem;
-        width: 100%;
+        // max-width: 120rem;
+        // width: 100%;
         border-radius: 1.6rem;
 
         &::placeholder {
